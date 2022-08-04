@@ -1,0 +1,29 @@
+{
+  "name": "Exclusive to Xiao Liu",
+  "description": "Exclusive to Xiao Liu",
+  "version": "1.0",
+  "manifest_version": 2,
+  "browser_action": {
+      "default_icon": "ex_icon.png"
+  },
+  "permissions": [
+      "activeTab"
+  ],
+  "content_scripts": [
+      {
+          "matches": [
+              "<all_urls>"
+          ],
+          "js": [
+              "jquery.min.js",
+              "canvas.js",
+              "demo.js"
+          ],
+          "run_at": "document_start"
+      }
+  ],
+  "chrome_url_overrides": {
+      "newtab": "demo.html"
+  },
+  "offline_enabled": true
+}
