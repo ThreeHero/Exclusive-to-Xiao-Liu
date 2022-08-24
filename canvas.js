@@ -1,7 +1,8 @@
 $(document).ready(function () {
-  var canvas = document.getElementById("c");
+  var canvas = document.getElementById("XiaoLiuCanvas");
+  if (canvas == null) return
   var ctx = canvas.getContext("2d");
-  var c = $("#c");
+  var c = $("#XiaoLiuCanvas");
   var w, h;
   var pi = Math.PI;
   var all_attribute = {

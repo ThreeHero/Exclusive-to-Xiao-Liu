@@ -1,26 +1,28 @@
-var input = document.getElementById("input")
-var btn = document.querySelector('button')
+var XiaoLiuBtn = document.querySelector('#XiaoLiuBtn')
+var XiaoLiuInput = document.querySelector('#XiaoLiuInput')
+
+XiaoLiuInput != null && XiaoLiuInput.focus()
 
 // 点击是百度搜索
-btn.addEventListener('click', function () {
-  if (input.value.length <= 0) return 
-  location.href = 'http://www.baidu.com/s?wd=' + input.value
+XiaoLiuBtn != null && XiaoLiuBtn.addEventListener('click', function () {
+  if (XiaoLiuInput.value.length <= 0) return 
+  location.href = 'http://www.baidu.com/s?wd=' + XiaoLiuInput.value
 })
 
-// input.addEventListener('keyup', function (e) {
+// XiaoLiuInput.addEventListener('keyup', function (e) {
 //   if (e.keyCode === 13) {
 //     //点击回车要执行的事件
 //     location.href = 'http://www.baidu.com/s?wd=' + this.value
 //   }
 // })
 
-// btn.addEventListener('click', function () {
-//   location.href = 'https://www.google.com/search?q=' + input.value
+// XiaoLiuBtn.addEventListener('click', function () {
+//   location.href = 'https://www.google.com/search?q=' + XiaoLiuInput.value
 // })
 
 // 回车是谷歌搜索
-input.addEventListener('keyup', function (e) {
-  if (input.value.length <= 0) return
+XiaoLiuInput != null && XiaoLiuInput.addEventListener('keyup', function (e) {
+  if (XiaoLiuInput.value.length <= 0) return
 
   if (e.key === "Enter") {
     //点击回车要执行的事件
