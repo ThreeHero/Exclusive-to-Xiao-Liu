@@ -1,7 +1,7 @@
 {
   "name": "Exclusive to Xiao Liu",
   "description": "Exclusive to Xiao Liu",
-  "version": "1.0",
+  "version": "1.1",
   "manifest_version": 2,
   "browser_action": {
       "default_icon": "ex_icon.png"
