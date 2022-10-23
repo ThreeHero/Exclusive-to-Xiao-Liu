@@ -38,3 +38,10 @@ ExclusivePage4XiaoLiu != null && (ExclusivePage4XiaoLiu.oncontextmenu = function
   //取消默认的浏览器自带右键 很重要！！
   e.preventDefault();
 })
+
+// 按下s自动获取焦点
+ExclusivePage4XiaoLiu != null && ExclusivePage4XiaoLiu.addEventListener('keyup', e => {
+  if (e.code === 'KeyS') {
+    XiaoLiuInput != null && XiaoLiuInput.focus()
+  }
+})
