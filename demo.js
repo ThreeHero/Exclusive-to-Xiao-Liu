@@ -1,5 +1,6 @@
-var XiaoLiuBtn = document.querySelector('#XiaoLiuBtn')
-var XiaoLiuInput = document.querySelector('#XiaoLiuInput')
+let XiaoLiuBtn = document.querySelector('#XiaoLiuBtn')
+let XiaoLiuInput = document.querySelector('#XiaoLiuInput')
+let ExclusivePage4XiaoLiu = document.querySelector('#ExclusivePage4XiaoLiu')
 
 XiaoLiuInput != null && XiaoLiuInput.focus()
 
@@ -33,7 +34,7 @@ XiaoLiuInput != null && XiaoLiuInput.addEventListener('keyup', function (e) {
 
 
 // 禁止右键菜单
-window.oncontextmenu = function (e) {
+ExclusivePage4XiaoLiu != null && (ExclusivePage4XiaoLiu.oncontextmenu = function (e) {
   //取消默认的浏览器自带右键 很重要！！
   e.preventDefault();
-}
+})
